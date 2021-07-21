@@ -1,0 +1,250 @@
+
+
+
+/* #############################################    */
+/*                  CSS GRID                       */
+/* #############################################  */
+
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto 100px;
+
+}
+
+
+.header-box {
+  background-color: #242424 ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+ /*    margin-left: auto;
+        margin-right: auto;
+
+  width: 50%;*/
+}
+
+.header-navbar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.content-box {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: rgba(230,186,146);
+   /*  width: 800px; */
+  word-wrap: break-word;
+    margin: auto;
+  width: 50%;
+}
+
+.bottom-box {
+  background-color: rgba(48,48,48);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+
+.bottom-status {
+  background-color: rgba(161,210,9);
+  color: rgba(18,84,1);
+  bottom: 0;
+  float:left; /* add this */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bottom-filename {
+  background-color: rgba(67,67,67);
+  color: rgba(236,236,236);
+  bottom: 0;
+  float:left; /* add this */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bottom-type {
+  color: rgba(140,140,140);
+  bottom: 0;
+  float:right; /* add this */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bottom-ratio {
+  background-color: rgba(197,197,197);
+
+  color: rgba(107,107,107);
+  bottom: 0;
+  float:right; /* add this */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(140,140,140, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(140,140,140);
+} 
+
+.article-desc{
+  padding-bottom: 80px;
+} 
+
+.article-desc h3 {
+  margin-left: 0px;
+} 
+
+.article-date{
+  color: rgba(78,78,78);
+  font-size: 12px;
+
+}
+
+.article-tag{
+  color: rgba(212,100,11);
+  font-size: 12px;
+}
+
+
+body {
+  background-color: #1d1d1d;
+  font-family: 'Roboto Mono', monospace;
+  background-size: 600px ;
+  font-size: 16px;
+
+  background-image: url("yeezy-bear 8 alpha.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%; 
+
+}
+
+p { 
+  margin-left: 15px;
+}
+
+
+h1 { 
+  color: rgba(116,158,157);
+}
+
+h2 { 
+  color: rgba(116,158,157);
+}
+
+h3 { 
+  color: rgba(184,68,72);
+  margin-left: 8px;
+  font-size: 20px;
+
+}
+
+
+hr {
+  border:none;
+  color: rgba(116,158,157);
+
+  border-top: 3px solid;/* or bottom */
+  }
+
+
+a:hover {
+  color: rgba(212,100,11);
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: rgba(140,140,140); name !important;
+}
+
+
+.stat{
+  color: rgba(155,90,124);
+}
+
+
+.connect_url{
+  color: rgba(184,68,72);
+  font-size: 20px;
+}
+
+.coffee_url{
+  color: rgba(116,158,157);
+
+  font-size: 16px;
+}
+
+
+
+.btn-dark, .btn-dark:hover, .btn-dark:active, .btn-dark:visited {
+  color: rgba(230,186,146);
+  float: right;
+  background-color: rgba(67,67,67);
+
+}
+
+
+.navbar-custom {
+  background-color: #242424	;
+}
+
+
+.navbar-brand{
+  color: rgba(140,140,140);
+  margin-left: 20px;
+}
+
+
+.navbar-custom .navbar-text {
+  color: rgba(140,140,140);
+  background-color: #242424;
+
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link{
+  color: rgba(140,140,140 );
+
+}
+
+@media only screen and (max-width: 600px) {
+.content-box {
+   /*  width: 800px; */
+  width: 100%;
+
+  }
+
+  .grid-container {
+  display: grid;
+  grid-template-rows: auto auto 100px;
+  width: 300px;
+
+}
+
+
+  .header-navbar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+body {
+  background-color: #1d1d1d;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+
+}
+
+
+}
+
+
+
