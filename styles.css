@@ -6,6 +6,27 @@
 /* #############################################  */
 
 
+@media only screen and (max-width: 600px) {
+.content-box {
+   /*  width: 800px; */
+  width: 90%;
+
+  }
+
+  .grid-container {
+  display: grid;
+  grid-template-rows: auto auto 100px;
+
+}
+
+body {
+  background-color: #1d1d1d;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+
+}
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: auto auto 100px;
@@ -218,22 +239,14 @@ nav a:hover{
 @media only screen and (max-width: 600px) {
 .content-box {
    /*  width: 800px; */
-  width: 100%;
+  width: 90%;
 
   }
 
   .grid-container {
   display: grid;
   grid-template-rows: auto auto 100px;
-  width: 300px;
 
-}
-
-
-  .header-navbar {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 body {
@@ -242,9 +255,6 @@ body {
   font-size: 16px;
 
 }
-
-
 }
-
 
 
