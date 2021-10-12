@@ -94,7 +94,7 @@ d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data.js
 	
 		})
 		.on("mouseover", function(d) {
-		    	d3.select(this).style("cursor", "help");
+		    	d3.select(this).style("cursor", "pointer");
 	    	})
 	    .on("mouseout", function(d) {
 	    		d3.select(this).style("cursor", "default"); 
