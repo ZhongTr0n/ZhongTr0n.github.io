@@ -11,7 +11,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(200))
     .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("center", d3.forceCenter(width / 0.5, height / 0.5))
     .force("attraceForce",d3.forceManyBody().strength(-100));
 
 var opacity = 0.05;
@@ -179,7 +179,7 @@ function zoom_actions(){
 
 // initial scaling on the svg container - this means everything in it is scaled as well
 svg.call(zoom_handler)
-.call(zoom_handler.transform, d3.zoomIdentity.scale(1,1))
+.call(zoom_handler.transform, d3.zoomIdentity.scale(0.2,0.2))
 ;
 
 zoom_handler(svg);
