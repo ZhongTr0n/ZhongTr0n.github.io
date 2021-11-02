@@ -16,7 +16,7 @@ var simulation = d3.forceSimulation()
 
 var opacity = 0.05;
 var transitionPeriod = 500;
-d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data.json", function(error, graph) {
+d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data2.json", function(error, graph) {
   if (error) throw error;
 
 	var link = g.selectAll("line")
