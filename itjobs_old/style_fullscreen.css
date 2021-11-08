@@ -24,11 +24,3 @@ body {
 h1 {
 line-height: 0.3em;
 } 
-
-
-svg {
-  height: 100%;
-  margin: 0;
-  width: 100%;
-  float: left;
-}

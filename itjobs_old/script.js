@@ -1,13 +1,7 @@
 
-var width = 800,
-    height = 500;
-
-
-var svg = d3.select("body").append("svg")
-    .attr("viewBox", "0 0 " + width + " " + height)
-    .attr("width", width)
-    .attr("height", height);
-
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
 
 
 var g = svg.append("g");
@@ -29,7 +23,7 @@ d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data2.j
     .data(graph.links)
     .enter().append("line")
     .style("stroke-width", function(d) { return d.value; })
-    .style("stroke", "black" )
+    .style("stroke", "#999" )
     .style("opacity", "1")
     .attr("group",function(d) {return d.group; })
     .on("click", function(d) {
@@ -67,9 +61,9 @@ d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data2.j
     .data(graph.nodes)
     .enter().append("circle")
     .attr("r", function(d) { return d.color; })
-    .attr("fill", "rgba(219,200,125,0.4)")
+    .attr("fill", "rgba(155,90,124)")
     .style("stroke-width", 2)
-    .style("stroke", "rgba(230,186,146)")
+    .style("stroke", "rgba(116,158,157)")
     .attr("group",function(d) {return d.group;} )
     .call(d3.drag()
           .on("start", dragstarted)
@@ -113,7 +107,7 @@ d3.json("https://raw.githubusercontent.com/ZhongTr0n/JD_Analysis/main/jd_data2.j
 		.enter().append("text")
 		.attr("dx",0)
 		.attr("dy",0)
-    .style('fill', "#444444")
+    .style('fill', "white")
     .attr("font-size", function(d) { if (d.color < 18) {
   return 40;
 } else {

@@ -1,13 +1,7 @@
 
-var width = 800,
-    height = 500;
-
-
-var svg = d3.select("body").append("svg")
-    .attr("viewBox", "0 0 " + width + " " + height)
-    .attr("width", width)
-    .attr("height", height);
-
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
 
 
 var g = svg.append("g");
